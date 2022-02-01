@@ -2,22 +2,18 @@ package CodeForce;
 
 import java.util.Scanner;
 
-public class exe_A455 {
+public class exe_A432 {
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
-		long[] a = new long[100001];
+		int k = scanner.nextInt();
+		int count = 0;
 		for (int i = 0; i < n; i++) {
-			int x = scanner.nextInt();
-			a[x] += x;
+			if (scanner.nextInt()<=5-k) count++;
 		}
 		scanner.close();
-		//Solve
-		for (int i = 2; i < 100001; i++) {
-			a[i] = Math.max(a[i-1], a[i] + a[i-2]);
-		}
 		//Output
-		System.out.println(a[100000]);
+		System.out.println(count/3);
 	}
 }

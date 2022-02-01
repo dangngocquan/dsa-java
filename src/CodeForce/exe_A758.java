@@ -1,23 +1,25 @@
 package CodeForce;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class exe_A455 {
+public class exe_A758 {
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
-		long[] a = new long[100001];
+		int[] a = new int[n];
 		for (int i = 0; i < n; i++) {
-			int x = scanner.nextInt();
-			a[x] += x;
+			a[i] = scanner.nextInt();
 		}
 		scanner.close();
 		//Solve
-		for (int i = 2; i < 100001; i++) {
-			a[i] = Math.max(a[i-1], a[i] + a[i-2]);
+		Arrays.sort(a);
+		int res = 0;
+		for (int i : a) {
+			res += a[n-1] - i;
 		}
 		//Output
-		System.out.println(a[100000]);
+		System.out.println(res);
 	}
 }
