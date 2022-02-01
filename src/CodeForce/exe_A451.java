@@ -10,13 +10,7 @@ public class exe_A451 {
 		int m = scanner.nextInt();
 		scanner.close();
 		//Solve
-		int max = n+m -1;
-		int res = 0;
-		if (max %2 == 0) {
-			res = max/2;
-		}else {
-			res = (max+1)/2;
-		}
+		int res = Math.min(n, m);
 		//Output
 		if (res %2 == 0) {
 			System.out.println("Malvika");
