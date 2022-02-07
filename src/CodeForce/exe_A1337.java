@@ -11,10 +11,10 @@ public class exe_A1337 {
 		int[] y = new int[t];
 		int[] z = new int[t];
 		for (int i = 0; i < t; i++) {
-			int a = scanner.nextInt();
+//			int a = scanner.nextInt();
 			int b = scanner.nextInt();
 			int c = scanner.nextInt();
-			int d = scanner.nextInt();
+//			int d = scanner.nextInt();
 			// a x b y c z d
 			// x + y > z
 			x[i] = b;
