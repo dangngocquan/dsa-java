@@ -4,46 +4,41 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class exe_C580 {
-	static int n,m,ans,consecutiveCount;
 	static boolean[] isCat;
+	static boolean[] isUsed;
 	static ArrayList<Integer>[] node;
-	static int parent;
+	static int ans = 0;
 	
-	static void dfs(int k) {
-		if (k == parent) return;
-		if (node[k].size()==1 && k != 1) {
+	static void dfs(int k, int m, int consecutiveCount) {
+		isUsed[k] = true;
+		if (node[k].size()==1) {
 			if (isCat[k]) {
-				consecutiveCount++;
+				if (consecutiveCount + 1 <=m) ans++;
 			}else {
-				consecutiveCount = 0;
-			}
-			if (consecutiveCount <= m) {
 				ans++;
 			}
 			return;
 		}
-		if (isCat[k]) {
-			consecutiveCount++;
-			if (consecutiveCount > m) return;
-		}else {
-			consecutiveCount = 0;
-		}
-		int tempParent = parent;
-		parent = k;
 		for (int x : node[k]) {
-			int temp = consecutiveCount;
-			dfs(x);
-			consecutiveCount = temp;
+			if (!isUsed[x]) {
+				if (isCat[k]) {
+					if (consecutiveCount+1 > m) return;
+					dfs(x,m,consecutiveCount+1);
+				}else {
+					dfs(x,m,0);
+				}
+			}
 		}
-		
+		isUsed[k] = false;
+		return;
 	}
-	
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
-		n = scanner.nextInt();
-		m = scanner.nextInt();
+		int n = scanner.nextInt();
+		int m = scanner.nextInt();
 		isCat = new boolean[n+1];
+		isUsed = new boolean[n+1];
 		node = new ArrayList[n+1];
 		for (int i = 1; i <= n; i++) {
 			if (scanner.nextInt() == 1) {
@@ -51,6 +46,7 @@ public class exe_C580 {
 			}else {
 				isCat[i] = false;
 			}
+			isUsed[i] = false;
 			node[i] = new ArrayList<Integer>();
 		}
 		for (int i = 1; i <= n-1; i++) {
@@ -61,9 +57,17 @@ public class exe_C580 {
 		}
 		scanner.close();
 		//Solve
-		parent = 0;
-		dfs(1);
+		isUsed[1] = true;
+		for (int x : node[1]) {
+			if (isCat[1]) {
+				dfs(x,m,1);
+			}else {
+				dfs(x,m,0);
+			}
+			
+		}
 		//Output
 		System.out.println(ans);
+		
 	}
 }
