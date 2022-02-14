@@ -1,6 +1,6 @@
 package chap001.test;
 
-public class test0001 {
+public class test_0001 {
 	public static void main(String[] args) {
 		int[] arr = new int[5];
 		arr[0] = 0;

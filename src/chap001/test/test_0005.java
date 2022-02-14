@@ -1,7 +1,7 @@
 package chap001.test;
 
-public class test0007 {
+public class test_0005 {
 	public static void main(String[] args) {
-		System.out.println('b' - 'a');
+		System.out.println((char)('~'+1));
 	}
 }

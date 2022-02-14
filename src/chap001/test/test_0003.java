@@ -1,6 +1,6 @@
 package chap001.test;
 
-public class test0003 {
+public class test_0003 {
 	static void  change(int[] n) {
 		n[1] = 0;
 	}

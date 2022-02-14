@@ -3,7 +3,7 @@ package chap001.test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class test0008 {
+public class test_0008 {
 	public static void main(String[] args) {
 		// 3 = 11
 		// 2 = 10
