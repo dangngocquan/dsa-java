@@ -1,6 +1,6 @@
 package chap001.test;
 
-public class test0004 {
+public class test_0004 {
 	public static void main(String[] args) {
 		int sum = 0;
 		for (int i = 1; i <= 20; i++) {

@@ -1,6 +1,6 @@
 package chap001.test;
 
-public class test0006 {
+public class test_0006 {
 	public static void main(String[] args) {
 		String s1 = "abc";
 		String s2 = "ABC";

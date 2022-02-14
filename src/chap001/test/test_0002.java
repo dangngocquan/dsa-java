@@ -4,7 +4,7 @@ package chap001.test;
 
 import java.util.*;
 
-public class test0002 {
+public class test_0002 {
 	static int[] arr;
 	static boolean[] used;
 	static List<String> result;
