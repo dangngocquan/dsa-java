@@ -2,11 +2,14 @@ package luyenCode;
 
 import java.util.Scanner;
 
-public class exe_DK02 {
+public class CB08 {
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
-		System.out.println(Math.max(Math.max(scanner.nextInt(), scanner.nextInt()),scanner.nextInt()));
+		int a = scanner.nextInt();
+		int b = scanner.nextInt();
 		scanner.close();
+		//Output
+		System.out.println(a + " + " + b + " = " + (a+b) );
 	}
 }

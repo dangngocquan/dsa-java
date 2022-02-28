@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class exe_PTTS {
+public class PTTS {
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

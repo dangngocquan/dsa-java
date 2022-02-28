@@ -2,7 +2,7 @@ package luyenCode;
 
 import java.util.Scanner;
 
-public class exe_CB06 {
+public class CB06 {
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

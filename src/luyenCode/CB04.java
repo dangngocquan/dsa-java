@@ -2,7 +2,7 @@ package luyenCode;
 
 import java.util.Scanner;
 
-public class exe_DK06 {
+public class CB04 {
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
@@ -10,14 +10,13 @@ public class exe_DK06 {
 		int b = scanner.nextInt();
 		scanner.close();
 		//Output
-		if (a==0) {
-			if (b==0) {
-				System.out.println("INF");
-			}else {
-				System.out.println("NO");
-			}
+		System.out.println(a+b);
+		System.out.println(a-b);
+		System.out.println(a*b);
+		if (b==0) {
+			System.out.println("INF");
 		}else {
-			System.out.printf("%.2f",-b*1.0/a);
+			System.out.printf("%.2f",a*1.0/b);
 		}
 	}
 }

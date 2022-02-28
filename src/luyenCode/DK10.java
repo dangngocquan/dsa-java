@@ -2,7 +2,7 @@ package luyenCode;
 
 import java.util.Scanner;
 
-public class exe_DK10 {
+public class DK10 {
 	static boolean isLeapYear(int year) {
 		if (year%400 == 0 || (year %4 == 0 && year % 100 != 0)) return true;
 		return false;
