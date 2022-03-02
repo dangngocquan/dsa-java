@@ -1,15 +1,17 @@
 package luyenCode;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class DEC2BIN {
 	static void solve(long x) {
-		String s = "";
+		Stack<Long> stack = new Stack<Long>();
 		while (x > 0) {
-			s = (char)(x%2 + 48) + s;
+			stack.add(x%2);
 			x /= 2;
 		}
-		System.out.println(s);
+		while (!stack.isEmpty()) System.out.print(stack.pop());
+		System.out.println();
 	}
 	
 	public static void main(String[] args) {
