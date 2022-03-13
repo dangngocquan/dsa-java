@@ -1,7 +1,7 @@
 package codeForce;
 
 import java.util.Scanner;
-
+//haha
 public class A1 {
 	public static void main(String[] args) {
 		//Input
