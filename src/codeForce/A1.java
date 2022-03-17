@@ -2,16 +2,35 @@ package codeForce;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve 1A problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/1/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 9:39:38 AM Mar 17, 2022
+ */
 public class A1 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
-		//Input
 		Scanner scanner = new Scanner(System.in);
+		
+		//n, m, a - Input datas
 		int n = scanner.nextInt();
 		int m = scanner.nextInt();
 		int a = scanner.nextInt();
 		scanner.close();
-		//Solve
+		
+		//res - the needed number of flagstones.
 		long res = 0;
+		
+		//Get res
 		if (n%a!=0) {
 			n=n/a+1;
 		}else {
@@ -23,8 +42,8 @@ public class A1 {
 			m /= a;
 		}
 		res= (long)n*m;
-		//Output
-		System.out.println(res);
 		
+		//Print out the result.
+		System.out.println(res);
 	}
 }
