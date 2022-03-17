@@ -2,8 +2,24 @@ package codeForce;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A144 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/144/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 6:34:58 PM -  Mar 17, 2022
+ */
 public class A144 {
-	static int getIndexOfMinValue(int[] arr) {
+	/**
+	 * 
+	 * This method is used to get the index of the minimum value of the integer array 'arr'.
+	 * 
+	 * @param arr is a integer array.
+	 * @return Return a integer data type - the index of the minimum value in integer array 'arr'.
+	 */
+	public static int getIndexOfMinValue(int[] arr) {
 		int res = 0;
 		int minValue = 1000;
 		for (int i = 0; i < arr.length; i++) {
@@ -15,7 +31,14 @@ public class A144 {
 		return res;
 	}
 	
-	static int getIndexOfMaxValue(int[] arr) {
+	/**
+	 * 
+	 * This method is used to get the index of the maximum value of the integer array 'arr'.
+	 * 
+	 * @param arr is a integer array.
+	 * @return Return a integer data type - the index of the maximum value in integer array 'arr'.
+	 */
+	public static int getIndexOfMaxValue(int[] arr) {
 		int res = 0;
 		int maxValue = 0;
 		for (int i = 0; i < arr.length; i++) {
@@ -27,6 +50,12 @@ public class A144 {
 		return res;
 	}
 	
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
@@ -37,6 +66,7 @@ public class A144 {
 		}
 		scanner.close();
 		//Solve
+		//res - the minimum number of seconds the colonel will need to form a line-up the general will like.
 		int res = 0;
 		int indexMin = getIndexOfMinValue(a);
 		int indexMax = getIndexOfMaxValue(a);

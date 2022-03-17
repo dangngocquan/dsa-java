@@ -2,7 +2,22 @@ package codeForce;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A1328 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/1328/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 6:39:56 PM -  Mar 17, 2022
+ */
 public class A1328 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input + Solve
 		Scanner scanner = new Scanner(System.in);
