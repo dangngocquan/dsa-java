@@ -4,7 +4,22 @@ import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * 
+ * This class is used to solve A443 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/443/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 6:44:21 PM -  Mar 17, 2022
+ */
 public class A443 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
