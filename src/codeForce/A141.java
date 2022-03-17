@@ -5,7 +5,22 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A141 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/141/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 10:28:40 PM -  Mar 17, 2022
+ */
 public class A141 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
