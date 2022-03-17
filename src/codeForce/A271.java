@@ -4,8 +4,24 @@ import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * 
+ * This class is used to solve A271 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/271/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 5:04:59 PM -  Mar 17, 2022
+ */
 public class A271 {
-	static boolean isDistinctDigitsNumber(int n) {
+	/**
+	 * 
+	 * This method is used to check the number n if it is a distinct digits number or not.
+	 * 
+	 * @param n is the number which you want to check.
+	 * @return Return true if n is a distinct digits number. Otherwise, return false if n isn't a distinct digits number.
+	 */
+	public static boolean isDistinctDigitsNumber(int n) {
 		Set<Integer> set = new LinkedHashSet<Integer>();
 		while (n > 0) {
 			set.add(n%10);
@@ -16,13 +32,20 @@ public class A271 {
 		return res;
 	}
 	
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
+		int y = scanner.nextInt();
 		scanner.close();
 		//Solve
-		int res = n+1;
+		//res - the minimum year number that is strictly larger than y and all it's digits are distinct.
+		int res = y+1;
 		while (!isDistinctDigitsNumber(res)) {
 			res++;
 		}

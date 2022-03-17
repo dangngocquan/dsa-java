@@ -6,13 +6,29 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A122 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/122/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 5:01:59 PM -  Mar 17, 2022
+ */
 public class A122 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		scanner.close();
 		//Solve
+		//res - the answer
 		String res = "NO";
 		Queue<Integer> q = new LinkedList<Integer>();
 		q.add(4);
