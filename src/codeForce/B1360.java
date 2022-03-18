@@ -3,7 +3,22 @@ package codeForce;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is use to solve B1360 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/1360/B"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 1:49:37 PM -  Mar 18, 2022
+ */
 public class B1360 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

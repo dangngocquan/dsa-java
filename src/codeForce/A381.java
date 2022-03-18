@@ -4,7 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A381 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/381/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 2:14:42 PM -  Mar 18, 2022
+ */
 public class A381 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

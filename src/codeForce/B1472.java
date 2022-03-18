@@ -2,7 +2,22 @@ package codeForce;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve B1472 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/1472/B"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 2:23:02 PM -  Mar 18, 2022
+ */
 public class B1472 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
