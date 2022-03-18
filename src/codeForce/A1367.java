@@ -2,8 +2,24 @@ package codeForce;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A1367 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/1367/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 12:56:39 PM -  Mar 18, 2022
+ */
 public class A1367 {
-	static String getResult(String s) {
+	/**
+	 * 
+	 * This method is used to get the result of each test case.
+	 * 
+	 * @param s is the string which you need to solve.
+	 * @return Return the answer.
+	 */
+	public static String getResult(String s) {
 		String res = "";
 		res += s.charAt(0);
 		if (s.length()>2) {
@@ -15,6 +31,12 @@ public class A1367 {
 		return res;
 	}
 	
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"codeForce","l":"A1409"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"codeForce","l":"B1367"}];updateSearchResults();

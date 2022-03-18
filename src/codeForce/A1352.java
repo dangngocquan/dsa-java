@@ -2,8 +2,24 @@ package codeForce;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve A1352 problem in codeforce.
+ * The lik of this problem is <a href = "https://codeforces.com/problemset/problem/1352/A"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 12:44:36 PM -  Mar 18, 2022
+ */
 public class A1352 {
-	static String[] getResult(int n) {
+	/**
+	 * 
+	 * This method is used to get the result of test case.
+	 * 
+	 * @param n is a integer data type.
+	 * @return Return the result of test case.
+	 */
+	public static String[] getResult(int n) {
 		String[] res = new String[2];
 		int count = 0;
 		String s = "";
@@ -18,6 +34,12 @@ public class A1352 {
 		return res;
 	}
 	
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

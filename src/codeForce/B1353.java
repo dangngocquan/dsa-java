@@ -3,8 +3,27 @@ package codeForce;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 
+ * This class is used to solve B1353 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/1353/B"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 1:17:24 PM -  Mar 18, 2022
+ */
 public class B1353 {
-	static int getResult(int n, int k, int[] a, int[] b) {
+	/**
+	 * 
+	 * This method is used to get the maximum possible sum you can obtain in the array a if you can do no more than.
+	 * 
+	 * @param n is the number of elements in a and b.
+	 * @param k is the maximum number of moves you can do.
+	 * @param a is the integer array a.
+	 * @param b is the integer array b.
+	 * @return Return a Integer data type - the maximum possible sum you can obtain in the array a if you can do no more than.
+	 */
+	public static int getResult(int n, int k, int[] a, int[] b) {
 		int res = 0;
 		Arrays.sort(a);
 		Arrays.sort(b);
@@ -22,6 +41,12 @@ public class B1353 {
 		return res;
 	}
 	
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);

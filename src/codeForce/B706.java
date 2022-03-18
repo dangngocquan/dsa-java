@@ -2,7 +2,22 @@ package codeForce;
 
 import java.util.Scanner;
 
-public class B706 {	
+/**
+ * 
+ * This class is used to solve B706 problem in codeforce.
+ * The link of this problem is <a href = "https://codeforces.com/problemset/problem/706/B"> here </a>.
+ * 
+ * @author Bris
+ * @version 1.0
+ * @since 1:14:11 PM -  Mar 18, 2022
+ */
+public class B706 {
+	/**
+	 * 
+	 * The main method - entry point of this app.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		//Input
 		Scanner scanner = new Scanner(System.in);
