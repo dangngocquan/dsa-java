@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"codeForce","c":"A456","l":"A456()","u":"%3Cinit%3E()"},{"p":"codeForce","c":"A456","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
+memberSearchIndex = [{"p":"codeForce","c":"A1304","l":"A1304()","u":"%3Cinit%3E()"},{"p":"codeForce","c":"A1304","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
