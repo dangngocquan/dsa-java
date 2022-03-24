@@ -10,7 +10,13 @@ import java.util.Scanner;
  * @version 1.0
  * @since 10:40:03 PM -  Mar 23, 2022
  */
-public class C1385 {	
+public class C1385 {
+	/**
+	 * 
+	 * The main method.
+	 * 
+	 * @param args Unused.
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int t = scanner.nextInt();
