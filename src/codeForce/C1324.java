@@ -13,30 +13,6 @@ import java.util.Scanner;
 public class C1324 {
 	/**
 	 * 
-	 * ...
-	 * 
-	 * @param s ...
-	 * @param d ...
-	 * @return ...
-	 */
-	public static boolean canSolve(String s, int d) {
-		for (int i = 0; i <= s.length() - d; i++) {
-			boolean isAllL = true;
-			for (int j = i; j < i + d; j++) {
-				if (s.charAt(j) == 'R') {
-					isAllL = false;
-					break;
-				}
-			}
-			if (isAllL) {
-				return false;
-			}
-		}
-		return true;
-	}
-	
-	/**
-	 * 
 	 * The main method
 	 * 
 	 * @param args Unused.
@@ -46,13 +22,19 @@ public class C1324 {
 		int t = scanner.nextInt();
 		while (t-->0) {
 			String s = scanner.next();
-			int length = s.length();
-			for (int d = 1; d <= s.length() + 1; d++) {
-				if (canSolve(s, d)) {
-					System.out.println(d);
-					break;
+			s = "R" + s + "R";
+			int ans = 0;
+			int tempSize = 1;
+			for (int i = 1; i < s.length(); i++) {
+				if (s.charAt(i) == 'R') {
+					ans = Math.max(ans, tempSize);
+					tempSize = 1;
+				}else {
+					tempSize++;
 				}
 			}
+			System.out.println(ans);
 		}
+		scanner.close();
 	}
 }
