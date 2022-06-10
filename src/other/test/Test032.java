@@ -3,11 +3,11 @@ package other.test;
 import java.util.Scanner;
 
 public class Test032 {
-	public static int[][] getInput() {
+	public static int[][] getInput(int rows, int columns) {
 		Scanner scanner = new Scanner(System.in);
-		int[][] matrix = new int[3][3];
-		for (int row = 0; row < 3; row++) {
-			for (int column = 0; column < 3; column++) {
+		int[][] matrix = new int[rows][columns];
+		for (int row = 0; row < rows; row++) {
+			for (int column = 0; column < columns; column++) {
 				matrix[row][column] = scanner.nextInt();
 			}
 		}
@@ -51,8 +51,10 @@ public class Test032 {
 	}
 	
 	public static void main(String[] args) {
-		int[][] matrix = new int[3][3];
-		matrix = getInput();
+		int numberOfRow = 3;
+		int numberOfColumn = 3;
+		int[][] matrix = new int[numberOfRow][numberOfColumn];
+		matrix = getInput(numberOfRow, numberOfColumn);
 		printMatrix(matrix);
 		System.out.println("Index of second max row: " + indexOfSecondMaxRow(matrix));
 	}
