@@ -13,11 +13,11 @@ public class B742 {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		int x = scanner.nextInt();
-		int[] count = new int[100001];
+		int[] count = new int[1000001];
 		long ans = 0;
 		for (int i = 0; i < n; i++) {
 			int num = scanner.nextInt();
-			int num2 = num ^ x;
+			int num2 = (int)(num ^ x);
 			ans += count[num2];
 			count[num]++;
 		}
