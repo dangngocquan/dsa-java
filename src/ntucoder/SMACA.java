@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @version 1.0
  * @since 10:03:18 PM -  Jul 14, 2022
  */
-public class ID3349 {
+public class SMACA {
 	public static Map<Integer, Integer> cardNumberMap = new LinkedHashMap<>();
 	public static Map<Integer, Integer> roomCardNumberMap = new LinkedHashMap<>();
 	public static int m;
