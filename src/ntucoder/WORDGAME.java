@@ -2,6 +2,8 @@ package ntucoder;
 
 import java.util.Scanner;
 
+// Time limit exceed 
+
 /**
  * <a href = "http://ntucoder.net/Problem/Details/5680"> Link </a>
  * @author Bris
