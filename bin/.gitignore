@@ -1,4 +1,13 @@
+/.classpath
+/.idea/
+/.project
+/.settings/
+/.vs/
+/Files/
+/doc/
+/ntucoder/
+/projecteuler/
 /codeforces/
 /luyencode/
-/ntucoder/
+/module-info.class
 /other/
