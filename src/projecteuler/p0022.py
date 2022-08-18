@@ -23,7 +23,7 @@ def getNameScores(names):
     return scores
 
 if __name__ == '__main__':
-    names = readFile("D:\Study\Java\WithEclipse\TrainingAlgorithms\src\Files\projecteuler\p0022_names.txt", 'r', ',')
+    names = readFile(".\src\Files\projecteuler\p0022_names.txt", 'r', ',')
     reformat(names)
     names.sort()
     scores = getNameScores(names)
