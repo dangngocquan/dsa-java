@@ -11,12 +11,22 @@ import java.util.Scanner;
 public class D339 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
-		int m = scanner.nextInt();
-		long[] a = new long[(int)(Math.pow(2, n))];
-		for (int i = 0; i < a.length; i++) {
-			a[i] = scanner.nextLong();
-		}
+//		int n = scanner.nextInt();
+//		int m = scanner.nextInt();
+//		long[] a = new long[(int)(Math.pow(2, n))];
+//		for (int i = 0; i < a.length; i++) {
+//			a[i] = scanner.nextLong();
+//		}
+//		while (m-- > 0) {
+//			int p = scanner.nextInt();
+//			long b = scanner.nextLong();
+//		}
+
 		scanner.close();
 	}
 }
+
+
+
+
+
