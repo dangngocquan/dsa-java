@@ -19,12 +19,12 @@ public class D246 {
 		int m = scanner.nextInt();
 		
 		Set<Integer>[] countColorsNearColor = new Set[100001];
-		List<Node1> nodeList = new ArrayList<>();
+		List<Node> nodeList = new ArrayList<>();
 		
-		nodeList.add(new Node1(0, 0));
+		nodeList.add(new Node(0, 0));
 		for (int i = 1; i <= n; i++) {
 			int color = scanner.nextInt();
-			nodeList.add(new Node1(i, color));
+			nodeList.add(new Node(i, color));
 			countColorsNearColor[color] = new LinkedHashSet<>();
 		}
 		
