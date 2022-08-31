@@ -22,36 +22,25 @@ public class D1512 {
 				sum += (long)(b[i]);
 			}
 			Arrays.sort(b);
-			int sumNumber = b[n+1];
-			int indexSumNumber = n+1;
-			int indexX = -1;
-			int x = b[n];
-			for (int i = 0; i <= n; i++) {
-				x = b[i];
-				if (sum - x - sumNumber == sumNumber) {
-					indexX = i;
+			
+			int index = -1;
+			for (int i = 0; i < n+1; i++) {
+				if (sum - b[i] == 2*b[n+1]) {
+					index = i;
 					break;
 				}
 			}
-			if (indexX == -1) {
-				sumNumber = b[n];
-				indexSumNumber = n;
-				for (int i = 0; i <= n+1; i++) {
-					if (i == n) {
-						continue;
-					}
-					x = b[i];
-					if (sum - x - sumNumber == sumNumber) {
-						indexX = i;
-						break;
-					}
+			if (index == -1) {
+				if (sum - b[n+1] == 2*b[n]) {
+					index = n;
 				}
 			}
-			if (indexX == -1) {
+			
+			if (index == -1) {
 				System.out.println(-1);
 			}else {
-				for (int i = 0; i < n+2; i++) {
-					if (i == indexX || i == indexSumNumber) {
+				for (int i = 0; i < n+1; i++) {
+					if (i == index) {
 						continue;
 					}
 					System.out.print(b[i] + " ");
