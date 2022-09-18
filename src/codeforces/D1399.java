@@ -1,5 +1,7 @@
 package codeforces;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -9,48 +11,34 @@ import java.util.Scanner;
  *
  */
 public class D1399 {
-	public static boolean completed(int[] groupOfChar) {
-		for (int i: groupOfChar) {
-			if (i == 0) {
-				return false;
-			}
-		}
-		return true;
-	}
-	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int t = scanner.nextInt();
+		StringBuilder str = new StringBuilder();
 		while (t-- > 0) {
 			int n = scanner.nextInt();
-			String s = scanner.next();
 			int[] groupOfChar = new int[n];
-			int count = 0;
-			int tempChar = -1;
-			while (!completed(groupOfChar)) {
-				count++;
-				for (int i = 0; i < n; i++) {
-					char ch = s.charAt(i);
-					if (groupOfChar[i] == 0) {
-						if (tempChar == -1) {
-							tempChar = ch - '0';
-							groupOfChar[i] = count;
-						}else {
-							if (ch - '0' == 1 - tempChar) {
-								groupOfChar[i] = count;
-								tempChar = ch - '0';
-							}
-						}
-					}
+			String s = scanner.next();
+			List<Integer> list = new LinkedList<>();
+			for (int i = 0; i < n; i++) {
+				int value = s.charAt(i) - '0';
+				int index = list.indexOf(1 - value);
+				if (index == -1) {
+					list.add(value);
+					groupOfChar[i] = list.size();
+				}else {
+					list.set(index, value);
+					groupOfChar[i] = index + 1;
 				}
-				tempChar = -1;
 			}
-			System.out.println(count);
+			
+			str.append(list.size()).append("\n");
 			for (int i : groupOfChar) {
-				System.out.print(i + " ");
+				str.append(i).append(" ");
 			}
-			System.out.println();
+			str.append("\n");
 		}
+		System.out.println(str);
 		scanner.close();
 	}
 }
