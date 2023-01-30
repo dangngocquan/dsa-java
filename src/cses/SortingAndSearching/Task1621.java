@@ -1,4 +1,4 @@
-package cses;
+package cses.SortingAndSearching;
 
 import java.util.HashSet;
 import java.util.Scanner;

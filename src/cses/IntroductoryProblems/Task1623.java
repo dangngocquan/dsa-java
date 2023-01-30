@@ -1,4 +1,4 @@
-package cses;
+package cses.IntroductoryProblems;
 
 import java.util.LinkedList;
 import java.util.Queue;
