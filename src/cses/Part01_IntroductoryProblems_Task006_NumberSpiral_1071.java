@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.Scanner;
 
@@ -8,12 +8,12 @@ import java.util.Scanner;
  * @since 10:28:23 AM - Jan 20, 2023
  *
  */
-public class Task1071 {
+public class Part01_IntroductoryProblems_Task006_NumberSpiral_1071 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int t = scanner.nextInt();
-		StringBuilder str= new StringBuilder();
-		while(t-- > 0) {
+		StringBuilder str = new StringBuilder();
+		while (t-- > 0) {
 			long y = scanner.nextLong();
 			long x = scanner.nextLong();
 			long maxVal = Math.max(y, x);
@@ -22,13 +22,13 @@ public class Task1071 {
 			if (maxVal % 2 == 0) {
 				if (y == minVal) {
 					str.append(valBottomRight - (maxVal - minVal) + "\n");
-				}else if (x == minVal) {
+				} else if (x == minVal) {
 					str.append(valBottomRight + (maxVal - minVal) + "\n");
 				}
-			}else {
+			} else {
 				if (y == minVal) {
 					str.append(valBottomRight + (maxVal - minVal) + "\n");
-				}else if (x == minVal) {
+				} else if (x == minVal) {
 					str.append(valBottomRight - (maxVal - minVal) + "\n");
 				}
 			}

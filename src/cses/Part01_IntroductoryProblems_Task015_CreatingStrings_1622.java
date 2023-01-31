@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,14 +11,14 @@ import java.util.TreeSet;
  * @since 7:57:09 PM - Jan 20, 2023
  *
  */
-public class Task1622 {
+public class Part01_IntroductoryProblems_Task015_CreatingStrings_1622 {
 	public static StringBuilder str;
 	public static Set<String> set;
 	public static char[] chars;
 	public static boolean[] isUsed;
 	public static StringBuilder tempStr;
 	public static int tempSize = 0;
-	
+
 	public static void find(int indexFinding) {
 		if (indexFinding == chars.length) {
 			set.add(tempStr.toString());
@@ -27,20 +27,19 @@ public class Task1622 {
 				str.append(tempStr.toString());
 				str.append("\n");
 			}
-		}else {
+		} else {
 			for (int i = 0; i < chars.length; i++) {
 				if (!isUsed[i]) {
 					tempStr.append(chars[i]);
 					isUsed[i] = true;
-					find(indexFinding+1);
+					find(indexFinding + 1);
 					isUsed[i] = false;
 					tempStr.deleteCharAt(indexFinding);
 				}
 			}
 		}
 	}
-	
-	
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		chars = scanner.next().toCharArray();

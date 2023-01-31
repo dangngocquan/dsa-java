@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.Scanner;
 
@@ -8,19 +8,19 @@ import java.util.Scanner;
  * @since 11:49:02 PM - Jan 19, 2023
  *
  */
-public class Task1070 {
+public class Part01_IntroductoryProblems_Task005_Permutations_1070 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		if (n == 1) {
 			System.out.println(1);
-		}else if (n < 4) {
+		} else if (n < 4) {
 			System.out.println("NO SOLUTION");
-		}else {
+		} else {
 			StringBuilder str = new StringBuilder();
 			for (int index = 0; index < n; index++) {
-				str.append((index % 2 == 0)? (n/2 + index/2 + 1 + " ") : (index/2+1 + " "));
-				
+				str.append((index % 2 == 0) ? (n / 2 + index / 2 + 1 + " ") : (index / 2 + 1 + " "));
+
 			}
 			System.out.print(str);
 		}

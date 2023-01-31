@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @since 3:29:08 PM - Jan 20, 2023
  *
  */
-public class Task2205 {
+public class Part01_IntroductoryProblems_Task013_GrayCode_2205 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
@@ -18,7 +18,7 @@ public class Task2205 {
 		q.add("");
 		StringBuilder str = new StringBuilder();
 		int tempCount = 1;
-		while(!q.isEmpty()) {
+		while (!q.isEmpty()) {
 			for (int i = 0; i < tempCount; i++) {
 				String s = q.poll();
 				if (s.length() == n) {
@@ -27,10 +27,10 @@ public class Task2205 {
 				}
 				String s1 = s + "0";
 				String s2 = s + "1";
-				if (i%2 == 0) {
+				if (i % 2 == 0) {
 					q.add(s1);
 					q.add(s2);
-				}else {
+				} else {
 					q.add(s2);
 					q.add(s1);
 				}

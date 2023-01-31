@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @since 11:34:59 PM - Jan 19, 2023
  *
  */
-public class Task1069 {
+public class Part01_IntroductoryProblems_Task003_Repetitions_1069 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.next();
@@ -18,7 +18,7 @@ public class Task1069 {
 		for (int index = 0; index < str.length(); index++) {
 			if (str.charAt(index) == tempChar) {
 				tempLength++;
-			}else {
+			} else {
 				maxLength = Math.max(maxLength, tempLength);
 				tempLength = 1;
 				tempChar = str.charAt(index);

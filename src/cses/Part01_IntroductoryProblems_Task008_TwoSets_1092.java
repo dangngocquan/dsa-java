@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -10,14 +10,14 @@ import java.util.Scanner;
  * @since 1:09:52 PM - Jan 20, 2023
  *
  */
-public class Task1092 {
+public class Part01_IntroductoryProblems_Task008_TwoSets_1092 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
 		StringBuilder s = new StringBuilder();
-		if (n%4 == 1 || n%4 == 2) {
+		if (n % 4 == 1 || n % 4 == 2) {
 			s.append("NO");
-		}else {
+		} else {
 			s.append("YES\n");
 			List<Long> list1 = new LinkedList<>();
 			List<Long> list2 = new LinkedList<>();
@@ -27,18 +27,18 @@ public class Task1092 {
 				if (sum1 <= sum2) {
 					sum1 += val;
 					list1.add(val);
-				}else {
+				} else {
 					sum2 += val;
 					list2.add(val);
 				}
 			}
 			s.append(list1.size() + "\n");
-			for (Long val: list1) {
+			for (Long val : list1) {
 				s.append(val + " ");
 			}
 			s.append("\n");
 			s.append(list2.size() + "\n");
-			for (Long val: list2) {
+			for (Long val : list2) {
 				s.append(val + " ");
 			}
 		}

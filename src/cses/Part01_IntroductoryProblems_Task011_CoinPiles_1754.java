@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @since 1:37:40 PM - Jan 20, 2023
  *
  */
-public class Task1754 {
+public class Part01_IntroductoryProblems_Task011_CoinPiles_1754 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		StringBuilder str = new StringBuilder();
@@ -19,13 +19,13 @@ public class Task1754 {
 			// 1x + 2y = a
 			// 2x + 1y = b
 			if ((a + b) % 3 == 0) {
-				long xy = (a+b)/3;
+				long xy = (a + b) / 3;
 				if (a >= xy && b >= xy) {
 					str.append("YES\n");
-				}else {
+				} else {
 					str.append("NO\n");
 				}
-			}else {
+			} else {
 				str.append("NO\n");
 			}
 		}

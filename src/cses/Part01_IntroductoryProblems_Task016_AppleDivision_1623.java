@@ -1,4 +1,4 @@
-package cses.IntroductoryProblems;
+package cses;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @since 8:51:33 PM - Jan 20, 2023
  *
  */
-public class Task1623 {
+public class Part01_IntroductoryProblems_Task016_AppleDivision_1623 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
@@ -31,7 +31,7 @@ public class Task1623 {
 				q.add(pollNum + num);
 				q.add(pollNum - num);
 				if (n == 0) {
-					long val = Math.min(Math.abs(pollNum+ num) , Math.abs(pollNum - num));
+					long val = Math.min(Math.abs(pollNum + num), Math.abs(pollNum - num));
 					ans = Math.min(ans, val);
 				}
 			}
