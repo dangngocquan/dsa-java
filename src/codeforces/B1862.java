@@ -122,6 +122,23 @@ public class B1862 {
         FastOutput fastOutput = new FastOutput(System.out);
         int t = fastScanner.nextInt();
         while (t-- > 0) {
+            int n = fastScanner.nextInt();
+            int[] b = new int[n];
+            for (int i = 0; i < n; i++) b[i] = fastScanner.nextInt();
+            int m = 1;
+            StringBuilder s = new StringBuilder("");
+            s.append(b[0]).append(" ");
+            for (int i = 1; i < n; i++) {
+                if (b[i] >= b[i-1]) {
+                    s.append(b[i]).append(" ");
+                    m++;
+                } else {
+                    s.append(b[i]).append(" ").append(b[i]).append(" ");
+                    m += 2;
+                }
+            }
+            fastOutput.println(m);
+            fastOutput.println(s.toString());
 
         }
         fastOutput.close();

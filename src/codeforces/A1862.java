@@ -1,6 +1,8 @@
 package codeforces;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class A1862 {
     static class FastScanner {
@@ -122,7 +124,31 @@ public class A1862 {
         FastOutput fastOutput = new FastOutput(System.out);
         int t = fastScanner.nextInt();
         while (t-- > 0) {
+            int n = fastScanner.nextInt();
+            int m = fastScanner.nextInt();
 
+            char[][] table = new char[n][m];
+            for (int i = 0; i < n; i++) {
+                table[i] = fastScanner.next().toCharArray();
+            }
+
+            int index = 0;
+            char[] chars = new char[] {'v', 'i', 'k', 'a'};
+
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (table[j][i] == chars[index]) {
+                        index++;
+                        break;
+                    }
+                }
+                if (index > 3) break;
+            }
+            if (index > 3) {
+                fastOutput.println("YES");
+            } else {
+                fastOutput.println("NO");
+            }
         }
         fastOutput.close();
     }
