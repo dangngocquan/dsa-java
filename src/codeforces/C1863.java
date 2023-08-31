@@ -124,17 +124,17 @@ public class C1863 {
         while (t-- > 0) {
             int n = fastScanner.nextInt();
             int k = fastScanner.nextInt();
-            int[] a = new int[n+1];
-            int sum = 0;
+            long[] a = new long[n+1];
+            long sum = 0;
             for (int i = 1; i <= n; i++) {
-                int value = fastScanner.nextInt();
+                long value = fastScanner.nextLong();
                 a[i] = value;
                 sum += value;
             }
-            a[0] = n * (n+1) / 2 - sum;
+            a[0] = ((long) n) * ((long) (n+1)) / 2 - sum;
 
             k %= (n+1);
-            int[] b = new int[n+1];
+            long[] b = new long[n+1];
             for (int i = 0; i <= n; i++) {
                 int indexA = i - k;
                 if (indexA < 0) indexA += n+1;
